@@ -96,7 +96,7 @@ function setVersion() {
 }
 
 function setStorage() {
-  env.storageURI = readENV('STORAGE_URI') || readENV('MONGO_CONNECTION') || readENV('MONGO') || readENV('MONGOLAB_URI') || readENV('MONGODB_URI');
+  env.storageURI = 'mongodb://heroku_0430g8v5:9cavttvlmqarbpk65hlv9n1odq@ds139984.mlab.com:39984/heroku_0430g8v5';
   env.entries_collection = readENV('ENTRIES_COLLECTION') || readENV('MONGO_COLLECTION', 'entries');
   env.authentication_collections_prefix = readENV('MONGO_AUTHENTICATION_COLLECTIONS_PREFIX', 'auth_');
   env.treatments_collection = readENV('MONGO_TREATMENTS_COLLECTION', 'treatments');
